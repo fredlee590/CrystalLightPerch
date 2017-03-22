@@ -144,6 +144,17 @@
 <wire x1="35" y1="0" x2="35" y2="35" width="0" layer="20"/>
 <wire x1="35" y1="35" x2="0" y2="35" width="0" layer="20"/>
 <wire x1="0" y1="35" x2="0" y2="0" width="0" layer="20"/>
+<text x="32.99" y="22" size="1.016" layer="25" rot="R90">CrystalLightPerch
+F. Lee
+03/21/2017</text>
+<text x="1.57" y="7.04" size="0.6096" layer="25">3.3V</text>
+<text x="1.49" y="14.47" size="0.6096" layer="25">3.3V</text>
+<text x="1.53" y="19.83" size="0.6096" layer="25">GND</text>
+<text x="7.02" y="9.7" size="0.6096" layer="25">GND</text>
+<text x="7.61" y="32.17" size="0.6096" layer="25" rot="R90">GND</text>
+<text x="1.53" y="30.3" size="0.6096" layer="25" rot="R90">VIN</text>
+<text x="1.15" y="17.19" size="0.6096" layer="25">DATA</text>
+<text x="1.06" y="4.47" size="0.6096" layer="25">DATA</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -322,7 +333,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="LaenPCBOrder">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -330,33 +341,29 @@ die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
 Einstellungen hier und speichern die Design Rules unter 
 einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -365,15 +372,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -386,8 +393,8 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="3mil"/>
+<param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
@@ -502,29 +509,50 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="PWR" library="SparkFun-Connectors" package="1X02" value="" x="2.5" y="33" rot="MR180"/>
-<element name="LED" library="SparkFun-Connectors" package="1X03" value="" x="5" y="14.96" rot="R90"/>
-<element name="MCU1" library="trinketLib" package="ARDUINO_TRINKET" value="ARDUINO_TRINKET" x="17.5" y="15"/>
-<element name="PC1" library="freddyLibr" package="PHOTOCELL_CERAMIC" value="" x="30" y="17.5" rot="R180"/>
-<element name="R1" library="SparkFun-Resistors" package="0603" value="4.7k" x="30" y="11" rot="R270">
-<attribute name="PROD_ID" value="RES-07857" x="30" y="11" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="PWR" library="SparkFun-Connectors" package="1X02" value="" x="5" y="33.01" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.04" y="30.843" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="6.27" y="35.042" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="SENSOR2" library="SparkFun-Connectors" package="1X03" value="" x="5" y="10" rot="R270"/>
+<element name="LED" library="SparkFun-Connectors" package="1X03" value="" x="5" y="14.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="7.5" y="22.283" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="7.032" y="13.69" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="MCU1" library="trinketLib" package="ARDUINO_TRINKET" value="ARDUINO_TRINKET" x="17.5" y="15"/>
+<element name="PC1" library="freddyLibr" package="PHOTOCELL_CERAMIC" value="" x="30" y="17.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.86" y="14.42" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R1" library="SparkFun-Resistors" package="0603" value="4.7k" x="30" y="11" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="RES-07857" x="30" y="11" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="31.37" y="8.482" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="28.9" y="8.958" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="SENSOR2" library="SparkFun-Connectors" package="1X03" value="" x="5" y="10" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.22" y="11.807" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="2.968" y="11.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="VIN">
 <contactref element="MCU1" pad="BATT"/>
 <contactref element="PWR" pad="2"/>
-<wire x1="5.04" y1="33" x2="11.15" y2="20.08" width="0" layer="19" extent="1-1"/>
+<wire x1="2.46" y1="33.01" x2="2.46" y2="28.77" width="0.4064" layer="1"/>
+<wire x1="2.46" y1="28.77" x2="11.15" y2="20.08" width="0.4064" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="MCU1" pad="3.3V"/>
 <contactref element="R1" pad="2"/>
 <contactref element="SENSOR2" pad="2"/>
 <contactref element="LED" pad="1"/>
-<wire x1="23.85" y1="9.92" x2="30" y2="10.15" width="0" layer="19" extent="1-1"/>
-<wire x1="5" y1="7.46" x2="23.85" y2="9.92" width="0" layer="19" extent="1-1"/>
-<wire x1="5" y1="14.96" x2="5" y2="7.46" width="0" layer="19" extent="1-1"/>
+<wire x1="30" y1="10.15" x2="24.08" y2="10.15" width="0.4064" layer="1"/>
+<wire x1="24.08" y1="10.15" x2="23.85" y2="9.92" width="0.4064" layer="1"/>
+<wire x1="23.85" y1="9.92" x2="18.55" y2="9.92" width="0.4064" layer="1"/>
+<wire x1="18.55" y1="9.92" x2="16.11" y2="7.48" width="0.4064" layer="1"/>
+<wire x1="16.11" y1="7.48" x2="5.02" y2="7.48" width="0.4064" layer="1"/>
+<wire x1="5.02" y1="7.48" x2="5" y2="7.46" width="0.4064" layer="1"/>
+<wire x1="5" y1="7.46" x2="4.18" y2="7.46" width="0.4064" layer="1"/>
+<wire x1="4.18" y1="7.46" x2="2.63" y2="9.01" width="0.4064" layer="1"/>
+<wire x1="2.63" y1="9.01" x2="2.63" y2="12.59" width="0.4064" layer="1"/>
+<wire x1="2.63" y1="12.59" x2="5" y2="14.96" width="0.4064" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="PC1" pad="2"/>
@@ -532,29 +560,45 @@ design rules under a new name.</description>
 <contactref element="PWR" pad="1"/>
 <contactref element="SENSOR2" pad="1"/>
 <contactref element="LED" pad="3"/>
-<wire x1="11.15" y1="17.54" x2="30" y2="19.2" width="0" layer="19" extent="1-1"/>
-<wire x1="5" y1="20.04" x2="11.15" y2="17.54" width="0" layer="19" extent="1-1"/>
-<wire x1="5" y1="10" x2="11.15" y2="17.54" width="0" layer="19" extent="1-1"/>
-<wire x1="2.5" y1="33" x2="5" y2="20.04" width="0" layer="19" extent="1-1"/>
+<wire x1="5" y1="20.04" x2="8.65" y2="20.04" width="0.4064" layer="1"/>
+<wire x1="8.65" y1="20.04" x2="11.15" y2="17.54" width="0.4064" layer="1"/>
+<wire x1="5" y1="10" x2="5" y2="11.39" width="0.4064" layer="16"/>
+<wire x1="5" y1="11.39" x2="11.15" y2="17.54" width="0.4064" layer="16"/>
+<wire x1="11.15" y1="17.54" x2="15.75" y2="17.54" width="0.4064" layer="1"/>
+<wire x1="15.75" y1="17.54" x2="21.56" y2="23.35" width="0.4064" layer="1"/>
+<wire x1="21.56" y1="23.35" x2="25.85" y2="23.35" width="0.4064" layer="1"/>
+<wire x1="25.85" y1="23.35" x2="30" y2="19.2" width="0.4064" layer="1"/>
+<wire x1="5" y1="33.01" x2="5" y2="20.04" width="0.4064" layer="16"/>
 </signal>
 <signal name="LED_DATA">
 <contactref element="MCU1" pad="PB4"/>
 <contactref element="LED" pad="2"/>
-<wire x1="5" y1="17.5" x2="11.15" y2="15" width="0" layer="19" extent="1-1"/>
+<wire x1="11.15" y1="15" x2="7.5" y2="15" width="0.4064" layer="1"/>
+<wire x1="7.5" y1="15" x2="5" y2="17.5" width="0.4064" layer="1"/>
 </signal>
 <signal name="LIGHT_SENSOR_IN">
 <contactref element="R1" pad="1"/>
 <contactref element="PC1" pad="1"/>
 <contactref element="MCU1" pad="PB2"/>
-<wire x1="23.85" y1="12.46" x2="30" y2="15.8" width="0" layer="19" extent="1-1"/>
-<wire x1="30" y1="11.85" x2="30" y2="15.8" width="0" layer="19" extent="1-1"/>
+<wire x1="23.85" y1="12.46" x2="26.66" y2="12.46" width="0.4064" layer="1"/>
+<wire x1="26.66" y1="12.46" x2="30" y2="15.8" width="0.4064" layer="1"/>
+<wire x1="30" y1="15.8" x2="30" y2="11.85" width="0.4064" layer="1"/>
 </signal>
 <signal name="SENSOR_EXP_IN">
 <contactref element="MCU1" pad="PB3"/>
 <contactref element="SENSOR2" pad="3"/>
-<wire x1="11.15" y1="12.46" x2="5" y2="4.92" width="0" layer="19" extent="1-1"/>
+<wire x1="5" y1="4.92" x2="7.55" y2="4.92" width="0.4064" layer="16"/>
+<wire x1="7.55" y1="4.92" x2="8.64" y2="6.01" width="0.4064" layer="16"/>
+<wire x1="8.64" y1="6.01" x2="8.64" y2="9.95" width="0.4064" layer="16"/>
+<wire x1="8.64" y1="9.95" x2="11.15" y2="12.46" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
