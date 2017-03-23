@@ -144,7 +144,7 @@
 <wire x1="35" y1="0" x2="35" y2="35" width="0" layer="20"/>
 <wire x1="35" y1="35" x2="0" y2="35" width="0" layer="20"/>
 <wire x1="0" y1="35" x2="0" y2="0" width="0" layer="20"/>
-<text x="32.99" y="22" size="1.016" layer="25" rot="R90">CrystalLightPerch
+<text x="32.99" y="22" size="0.8128" layer="25" rot="R90">CrystalLightPerch
 F. Lee
 03/21/2017</text>
 <text x="1.57" y="7.04" size="0.6096" layer="25">3.3V</text>
