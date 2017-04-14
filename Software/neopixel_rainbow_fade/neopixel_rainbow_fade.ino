@@ -1,7 +1,7 @@
 #include "FastLED.h"
 
 // How many leds in your strip?
-#define NUM_LEDS 23
+#define NUM_LEDS 1
 
 // For led chips like Neopixels, which have a data line, ground, and power, you just
 // need to define DATA_PIN.  For led chipsets that are SPI based (four wires - data, clock,
@@ -11,15 +11,21 @@
 #define UPPER 255 - DELTA
 #define LOWER 0 + DELTA
 
-#define ANALOG_IN_PIN 1
-#define OFF_THRESH 100
+#define PHOTO_IN_PIN 1
+//#define SOUND_IN_PIN 3
+#define PHOTO_OFF_THRESH 200
+//#define PHOTO_OFF_THRESH 100 // test in light
+//#define SOUND_THRESH 100
+#define TIME_LIMIT 2400 // in cycles (4 cycles/second) = 600 seconds 
 
 // Define the array of leds
 CRGB leds[NUM_LEDS];
 int hue = LOWER;
+int cycles = 0;
 
 void setup() {
-  pinMode(ANALOG_IN_PIN, INPUT);
+  pinMode(PHOTO_IN_PIN, INPUT);
+  //pinMode(SOUND_IN_PIN, INPUT);
   analogReference(DEFAULT);
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
   
@@ -32,25 +38,31 @@ void setup() {
 }
 
 void loop() {
+  if(cycles > TIME_LIMIT)
+  {
+    for(int i = 0; i < NUM_LEDS; i++)
+    {
+      leds[i] = CRGB::Black;
+    }
+
+    FastLED.show();
+    return;
+  }
   if(hue > UPPER)
   {
     hue = 0;
   }
   hue += DELTA;
 
-  // analogRead range is 0 - 1023. must adjust to be w/in 0 - 255
+  int brt = analogRead(PHOTO_IN_PIN) / 4; // convert 0-1023 to 0-255
   /*
-  int brt = 0;
-  if(analogRead(ANALOG_IN_PIN) < 512)
+  int snd = analogRead(SOUND_IN_PIN);
+  if(snd > SOUND_THRESH)
   {
-    brt = 255;
-  } else {
-    brt = 0;
+    hue = LOWER;
   }
   */
-
-  int brt = analogRead(ANALOG_IN_PIN) / 4;
-  if(brt < OFF_THRESH)
+  if(brt < PHOTO_OFF_THRESH)
   {
     brt = 0;
   }
@@ -61,5 +73,6 @@ void loop() {
   }
   
   FastLED.show();
-  delay(150);
+  delay(250);
+  cycles++;
 }
